@@ -1,0 +1,24 @@
+[
+    {
+        "title": "Harry Potter",
+        "author": "J.K. Rowling",
+        "release_date": "1997-01-01",
+        "pages": "300",
+        "genre": "Fantasy Fiction"
+    },
+    {
+        "title": "Nanti Kita Cerita Tentang Hari Ini",
+        "author": "Marchella F. P.",
+        "release_date": "2018-01-01",
+        "pages": "100",
+        "genre": "Drama"
+    },
+    {
+        "title": "Sir Arthur Conan Doyle",
+        "author": "J.K. Rowling",
+        "release_date": "1887-01-01",
+        "pages": "150",
+        "genre": "Fiction"
+    }
+
+]

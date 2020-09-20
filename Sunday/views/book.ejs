@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Lits</title>
+</head>
+<body>
+    <h1>BOOK STORE</h1>
+    <a href="/">Home</a>
+    <!-- <a href="/">Book List</a> -->
+    <a href="/books/add">Add Book</a>
+    
+    <h2>Ini Book List Page</h2>
+    <!-- <%= students %> -->
+    <table border="1" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Release Date</th>
+                <th>Pages</th>
+                <th>Genre</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% books.forEach(book => { %>
+                <tr>
+                    <td><%= book.id %></td>
+                    <td><%= book.title %></td>
+                    <td><%= book.author %></td>
+                    <td><%= book.release_date %></td>
+                    <td><%= book.pages %></td>
+                    <td><%= book.genre %></td>
+                    <td><a href="books/delete/ <%= book.id %>">Delete</a></td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+
+</body>
+</html>
