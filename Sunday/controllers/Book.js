@@ -47,13 +47,11 @@ class BookController {
     }
     static updateBook(req, res) {
         const id = req.params.id;
-        const { title, author, release_date, pages, genre } = req.body
+        const { title, author, pages } = req.body
         Books.update({
             title,
             author,
-            release_date,
             pages,
-            genre
         }, {
             where: { id }
         })
